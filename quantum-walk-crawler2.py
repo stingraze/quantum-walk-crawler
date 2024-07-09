@@ -4,6 +4,7 @@ import cmath
 import random
 import math
 import sys
+import time
 #(C)Tsubasa Kato - Inspire Search Corporation - 7/9/2024 11:24AM
 #Created with help from Perplexity AI and ChatGPT (GPT=4o)
 
@@ -51,6 +52,8 @@ def extract_links(url):
         response = requests.get(url)
         response.raise_for_status()
         content = response.content
+        #Fetch Pause
+        time.sleep(1)
         print(f"Retrieved content from {url}")  # Debugging line
         soup = BeautifulSoup(content, 'html.parser')
         links = [a['href'] for a in soup.find_all('a', href=True) if a['href'].startswith('http')]

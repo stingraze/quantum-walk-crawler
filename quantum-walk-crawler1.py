@@ -7,6 +7,7 @@ import cmath
 import random
 import math
 import sys
+import time
 # Quantum Walk-inspired Web Crawler
 
 # Parameters
@@ -52,6 +53,8 @@ def extract_links(url):
         response.raise_for_status()
         content = response.content
         print(f"Retrieved content from {url}")  # Debugging line
+        #Fetch Pause
+        time.sleep(1)
         soup = BeautifulSoup(content, 'html.parser')
         links = [a['href'] for a in soup.find_all('a', href=True) if a['href'].startswith('http')]
         if not links:
