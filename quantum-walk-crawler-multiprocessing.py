@@ -1,6 +1,6 @@
 #Quantum Walk Web Crawler Ver. 0.1 - Created with help of Claude 3.5
 #Referenced: Quantum walk based search algorithms - https://arxiv.org/abs/0808.0059
-#Created by Tsubasa Kato 7/11/2024 0:36PM JST
+#Created by Tsubasa Kato - Last Updated: 7/11/2024 0:51PM JST
 #My Website: https://www.tsubasakato.com 
 #My Company Website: https://www.inspiresearch.io/en
 #Experimental Version Still.
