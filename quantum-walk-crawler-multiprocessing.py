@@ -1,9 +1,9 @@
-#(C)Tsubasa Kato - Inspire Search Corporation - 7/11/2024 0:48AM
-#My Website: https://www.tsubasakato.com
+#Quantum Walk Web Crawler Ver. 0.1 - Created with help of Claude 3.5
+#Referenced: Quantum walk based search algorithms - https://arxiv.org/abs/0808.0059
+#Created by Tsubasa Kato 7/11/2024 0:36PM JST
+#My Website: https://www.tsubasakato.com 
 #My Company Website: https://www.inspiresearch.io/en
-#Created with help from Claude AI
-#Refenced: Quantum walk based search algorithms https://arxiv.org/abs/0808.0059
-#For Experimental Use.
+#Experimental Version Still.
 import random
 import math
 import requests
@@ -12,6 +12,7 @@ from urllib.parse import urljoin, urlparse
 import time
 import multiprocessing
 from functools import partial
+import sys
 
 def get_page_content(url):
     """Fetch and return the text content of a web page."""
@@ -115,8 +116,8 @@ def quantum_walk_web_crawler(start_url, max_pages):
 
 if __name__ == "__main__":
     # Example usage
-    start_url = "https://en.wikipedia.org/wiki/Main_Page"
-    max_pages = 20
+    start_url = sys.argv[1]
+    max_pages = 100
 
     print("Starting web crawler with quantum-inspired search algorithm")
     print(f"Start URL: {start_url}")
