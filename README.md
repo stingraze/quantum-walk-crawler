@@ -9,3 +9,5 @@ In order to use:
 ```
 >python3 quantum-walk-crawler1.py https://www.something.com
 ```
+
+quantum-crawler1.py starts from https://www.tsubasakato.com by itself. I think I will need to improve / code this more on my own to improve quality.
