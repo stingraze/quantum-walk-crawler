@@ -1,6 +1,8 @@
 # quantum-walk-crawler
 Using quantum walk to apply it to a web crawler.
 
+Last Updated: 12/6/2024
+
 Still under test and experimental.
 
 Created by Tsubasa Kato at Inspire Search Corp. https://www.inspiresearch.io/en on 7/9/2024 11:19AM JST
